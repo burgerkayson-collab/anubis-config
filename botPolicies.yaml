@@ -1,0 +1,10 @@
+bots:
+  - import: (data)/meta/default-config.yaml
+
+thresholds:
+  - name: default-challenge
+    expression: weight >= 0
+    action: CHALLENGE
+    challenge:
+      algorithm: fast
+      difficulty: 5
